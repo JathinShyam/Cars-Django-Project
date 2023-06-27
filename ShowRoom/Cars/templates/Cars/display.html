@@ -1,0 +1,35 @@
+<table>
+    <tr>
+        <th>CarName</th>
+        <th>mpg</th>
+        <th>cyl</th>
+        <th>disp</th>
+        <th>hp</th>
+        <th>drat</th>
+        <th>wt</th>
+        <th>qsec</th>
+        <th>vs</th>
+        <th>am</th>
+        <th>gear</th>
+        <th>carb</th>
+
+    </tr>
+    {% for i in q%}
+    <tr>
+        
+        <td>{{i.CarName}}</td>
+        <td>{{i.mpg}}</td>
+        <td>{{i.cyl}}</td>
+        <td>{{i.disp}}</td>
+        <td>{{i.hp}}</td>
+        <td>{{i.drat}}</td>
+        <td>{{i.wt}}</td>
+        <td>{{i.qsec}}</td>
+        <td>{{i.vs}}</td>
+        <td>{{i.am}}</td>
+        <td>{{i.gear}}</td>
+        <td>{{i.carb}}</td>
+        
+    </tr>
+    {% endfor %}
+</table>
